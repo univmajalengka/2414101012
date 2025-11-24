@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Goa Sunyaragi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        header {
+            background: #136f63;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .banner img {
+            border-radius: 10px;
+        }
+        .paket-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        iframe {
+            width: 100%;
+            height: 380px;
+            border-radius: 10px;
+        }
+        .carousel-item img {
+            height: 300px;   /* Atur tinggi sesuai keinginan */
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>Goa Sunyaragi</header>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#0b4f47;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Goa Sunyaragi</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Obyek Wisata</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Fasilitas Wisata</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Paket Wisata</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Museum Salak</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pemesanan</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Galery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- BANNER FOTO - CAROUSEL -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="img/7.jpg" class="d-block w-100" alt="Banner 1">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="Banner 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="Banner 3">
+        </div>
+
+    </div>
+
+    <!-- BUTTON PREV -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <!-- BUTTON NEXT -->
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+
+    <!-- DAFTAR PAKET WISATA -->
+    <div class="container my-5">
+        <h2 class="text-center text-success fw-bold mb-4">Daftar Paket Wisata</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Paket 1 -->
+            <div class="col-md-4">
+                <div class="card paket-card shadow">
+                    <img src="img/8.jpg" class="card-img-top" alt="Paket 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket Trasdisi 1</h5>
+                        <p class="card-text">Tanggal: Setiap Hari</p>
+                        <p class="text-success fw-bold">Pengunjung umum: Mulai 15rb</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket 2 -->
+            <div class="col-md-4">
+                <div class="card paket-card shadow">
+                    <img src="img/11.jpeg" class="card-img-top" alt="Paket 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket Trasdisi 2</h5>
+                        <p class="card-text">Tanggal: Setiap Hari</p>
+                        <p class="text-success fw-bold">Pelajar atau Mahasiswa: Mulai 10rb</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="col-md-4">
+                <div class="card paket-card shadow">
+                    <img src="img/10.jpeg" class="card-img-top" alt="Paket 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Parkir</h5>
+                        <p class="card-text">Tanggal: Setiap Hari</p>
+                        <p class="text-success fw-bold">Kendaraan atau mobil: Mulai 5rb</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    <!-- VIDEO PROMOSI -->
+    <div class="container my-5">
+        <h2 class="text-center text-success fw-bold mb-3">Video Promosi</h2>
+        <iframe src="https://www.youtube.com/embed/08PGLO0DMAw" allowfullscreen></iframe>
+    </div>
+
+    <!-- FOOTER -->
+<footer class="text-white mt-5" style="background:#0b4f47;">
+    <div class="container py-4">
+
+        <div class="row">
+
+            <!-- Kolom 1 -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Goa Sunyaragi</h5>
+                <p>
+                    Destinasi wisata budaya dan sejarah ikonik di Kota Cirebon, 
+                    menawarkan keindahan arsitektur goa bercorak khas dan pengalaman 
+                    wisata edukatif yang memukau.
+                </p>
+            </div>
+
+            <!-- Kolom 2 -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Kontak</h5>
+                <p class="mb-1">📍 Sunyaragi, Kesambi, Kota Cirebon</p>
+                <p class="mb-1">📞 +62 821-0000-0001</p>
+                <p class="mb-1">📧 info@guasunyaragi.com</p>
+            </div>
+
+            <!-- Kolom 3 -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Ikuti Kami</h5>
+                <p>
+                    <a href="#" class="text-white text-decoration-none d-block">Facebook</a>
+                    <a href="#" class="text-white text-decoration-none d-block">Instagram</a>
+                    <a href="#" class="text-white text-decoration-none d-block">YouTube</a>
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center pb-2">
+            © 2025 Goa Sunyaragi. All Rights Reserved.
+        </div>
+
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
