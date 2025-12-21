@@ -1,0 +1,44 @@
+Dokumentasi Error
+
+A. Error pertama
+1. Pesan Error Lengkap
+Parse error: syntax error, unexpected token "=" in C:\xampp\htdocs\tugas_3\Proses-pendaftaran-2.php on line 25
+2. Jenis Error
+Syntax
+3. Letak File dan Baris
+File : Proses-pendaftaran-2.php
+Baris : 25
+4. Penyebab
+Kurangnya kode $ untuk mendefinisikan variabel
+5. Cara Memperbaiki
+Tambahkan kode $ di variabel
+
+B. Error kedua
+1. Pesan Error Lengkap
+Fatal error: Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) 
+in C:\xampp\htdocs\tugas_3\Koneksi.php:15 Stack trace: #0 C:\xampp\htdocs\tugas_3\Koneksi.php(15): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'pendaftaran_sis...')
+ #1 C:\xampp\htdocs\tugas_3\Proses-pendaftaran-2.php(5): include('C:\\xampp\\htdocs...') #2 {main} thrown in C:\xampp\htdocs\tugas_3\Koneksi.php on line 15
+2. Jenis Error
+Fatal Error
+3. Letak File dan Baris
+File : Koneksi.php
+Baris : 15
+4. Penyebab
+Adanya password di database
+5. Cara Memperbaiki
+Hapus password database
+
+C. Error ketiga
+1. Pesan Error Lengkap
+Fatal error: Uncaught mysqli_sql_exception: Unknown database 'pendaftaran_siswa' in C:\xampp\htdocs\tugas_3\Koneksi.php:15 Stack trace: #0 C:\xampp\htdocs\tugas_3\Koneksi.php(15): 
+mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'pendaftaran_sis...') #1 C:\xampp\htdocs\tugas_3\Proses-pendaftaran-2.php(5): include('C:\\xampp\\htdocs...') #2 {main} thrown in C:\xampp\htdocs\tugas_3\Koneksi.php on line 15
+2. Jenis Error
+Fatal Error
+3. Letak File dan Baris
+File : Koneksi.php
+Baris : 15
+4. Penyebab
+Database yang di koneksi tidak tepat
+5. Cara Memperbaiki
+Masukan database yang tepat
+
